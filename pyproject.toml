@@ -1,0 +1,23 @@
+[project]
+name = "acp-dlai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Michael Booth", email = "michael@databooth.com.au" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.134.0",
+    "crewai-tools>=0.48.0",
+    "marimo>=0.14.9",
+    "notebook>=7.4.4",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+acp-dlai = "acp_dlai:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
